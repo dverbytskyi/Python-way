@@ -1,2 +1,2 @@
 # Python-way
-Tasks / Exercises / and more on Python
+Tasks / Exercises / Challenges / and more on Python
