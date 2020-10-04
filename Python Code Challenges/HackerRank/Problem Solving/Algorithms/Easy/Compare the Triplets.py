@@ -9,6 +9,7 @@ def compareTriplets(a, b):
             bob += 1
     answer.append(alice)
     answer.append(bob)
+
     return answer
 
 
