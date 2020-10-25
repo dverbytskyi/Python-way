@@ -1,4 +1,3 @@
-
 class TestClass:
     @classmethod
     def setup_class(cls):
