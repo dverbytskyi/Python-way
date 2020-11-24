@@ -17,11 +17,11 @@ def check_number(item, to_check):
     else:
         max_power = int(math.log10(-item)) + 2
 
-    # max_power = math.ceil(math.log10(item)) + 1 # обраховуєм скільчи цифр в числі
+    # max_power = math.ceil(math.log10(item)) + 1
 
     while item > 0:
         for numb in range(0, max_power):
-            part, remainder = divmod(item, 10**numb)  # вертаєм ціле і остаток від item // 2 and item % 2 as tuple
+            part, remainder = divmod(item, 10**numb)  
             if part == to_check or remainder == to_check:
                 return True
         item //= 10
