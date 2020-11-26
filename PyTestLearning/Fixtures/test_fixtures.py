@@ -25,7 +25,7 @@ def test1(setup1):
     print("Executing test1")
     assert True
 
-#@pytest.mark.usefixtures("setup")
-def test2(setup2):
+@pytest.mark.usefixtures("setup2")
+def test2():
     print("Executing test2")
     assert True
