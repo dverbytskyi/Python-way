@@ -1,6 +1,5 @@
 import pytest
 
-
 @pytest.fixture()
 def setup1():
     print("\nSetup 1")
