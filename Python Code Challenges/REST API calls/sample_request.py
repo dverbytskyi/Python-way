@@ -4,7 +4,7 @@ url = 'https://jsonplaceholder.typicode.com/photos'
 update_url = 'https://jsonplaceholder.typicode.com/photos/100'
 
 
-def get_requests():
+def get_request():
     response = requests.get(url)
     for item in response.json():
         print(item)
@@ -35,7 +35,7 @@ def delete_request():
 
 
 if __name__ == '__main__':
-    get_requests()
+    get_request()
     post_request()
     put_request()
     delete_request()
