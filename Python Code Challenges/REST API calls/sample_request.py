@@ -35,8 +35,8 @@ def delete_request():
 
 
 if __name__ == '__main__':
-    # get_requests()
-    # post_request()
-    # put_request()
+    get_requests()
+    post_request()
+    put_request()
     delete_request()
 
