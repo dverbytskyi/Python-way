@@ -1,0 +1,163 @@
+Data Types:
+
+Text Type:	       str
+Numeric Types:	   int, float, complex
+Sequence Types:	   list, tuple, range
+Mapping Type:	   dict
+Set Types:	       set, frozenset
+Boolean Type:	   bool
+Binary Types:	   bytes, bytearray, memoryview
+None
+
+=====================================================================
+Collections:
+
+1) Tuples  = (5, 6, 'cupcakes', 'frosting')
+    - immutable 
+    - ordered
+    - iterable
+
+my_tuple[0]
+len(my_tuple)
+.count()
+.index()
+---------------------------------------------------------------------
+2) Lists = [5, 6, 'cupcakes', 'frosting']
+    - mutable
+    - ordered
+    - iterable
+
+.append() // .insert()
+.pop() // .remove() # remove by index / value
+.reverse() // .sort()
+ ---------------------------------------------------------------------
+3) Dictionaries = {'num': 5, 'serv': 10}
+    - keys and values
+    - mutable and iterable
+    - ordered by time of insertion from Python 3.7+
+
+.keys() // .values() // .items()
+.pop() // del my_dict['key']
+---------------------------------------------------------------------
+4) Sets = {5, 6, 'cupcakes', 'frosting'}
+    - only unique items
+    - mutable
+    - unordered and iterable
+
+.add() // update()
+.remove()
+.intersection() // .difference()
+.clear()
+
+=====================================================================
+Time Complexity: (Run Time)
+
+1) O(1) - constant time, most of simple checks
+    dict = {5, 6, 'cupcakes', 'frosting'}
+    print(dict)
+---------------------------------------------------------------------
+2) O(n) - for loops are almost always
+    list = [5, 6, 'cupcakes', 'frosting']
+    for item in list:
+        print(item)
+---------------------------------------------------------------------
+3) O(log n) - Binary search is 0(log n) in the worst case
+---------------------------------------------------------------------
+4) O(n^2) - Two nested "for loops"
+    list_1 = ['cupcakes', 'frosting']
+    list_2 = [5, 6]
+    for item_1 in list_1:
+        for item_2 in list_2:
+            print(item_1 + item_2)
+---------------------------------------------------------------------
+5) O(n log n)
+6) O(2^n)
+7) O(n!)
+
+=====================================================================
+Recursion:
+
+def factorial_recursion(n):  
+    if n == 1:  
+        return n  
+    else:  
+        return n*factorial_recursion(n-1)
+
+=====================================================================
+OOP:
+
+class Dog:
+    species = 'canine'      # class attribute
+
+    def __init__(self, name):
+        self.name = name    # instance attribute
+
+toby = Dog('Toby')
+toby.name       # Toby
+toby.species    # canine
+---------------------------------------------------------------------
+1. Encapsulation - keep data safe from outside interference
+
+class Base:
+    def __init__(self):
+        # Protected member
+        self._a = 2
+        self.__c = 5
+
+---------------------------------------------------------------------
+2. Inheritance - allows classes to be arranged in hierarchical order
+
+Animal -> Dog -> Terrier
+class Dog(Animal):
+---------------------------------------------------------------------
+3. Polymorphism - classes or subclasses having the same method names, 
+but different imlementations for those methods
+Single interface with entities of diff types
+
+class Shape:
+    def draw(self):
+        # Draw code
+
+class Circle(Shape)
+    radius = 5
+    start_point = (0, 0)
+    def draw(self):
+        circle_area = 3.14 * (self.radius ** 2)
+        # draw code
+
+class Square(Shape)
+
+=====================================================================
+Data Structure:
+
+1) Stacks
+    - Last in, first out (LIFO)
+    - add and remove items in constant time
+    - maintain items in the order they are added
+
+* quick access to the most recent item
+* kepp items in order
+
+- list.append('a')
+- list.pop()
+---------------------------------------------------------------------
+2) Queues:
+    - first in, first out (FIFO)
+    - add items in constant time / remove in linear time
+
+* process the items in the order in which they were added
+
+- queue.append('a') 
+- queue.pop(0)
+---------------------------------------------------------------------
+3) Deque - Doubly Ended Queue (left / right)
+---------------------------------------------------------------------
+4) Singly Linked Lists: ->[ ]->[ ]->[ ]->
+    * unknown number of items to store
+    * one-directional movement is OK
+    * Need to insert items in between other items
+    * Sequential access is OK
+
+---------------------------------------------------------------------
+5) Double Linked Lists: ->[ ]<->[ ]<->[ ]<->
+
