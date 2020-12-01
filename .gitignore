@@ -5,3 +5,4 @@ venv/
 Python Code Challenges/.DS_Store
 .idea/
 
+/Python Code Challenges/API calls/client_secret.json
