@@ -9,7 +9,7 @@ client = gspread.authorize(creds)
 sheet = client.open('TextFieldInputs').sheet1
 
 #get the data from the spreadsheet
-all_values = 
+all_values = ""
 
 #get the values we want out of the data
 input_data = []
@@ -40,7 +40,7 @@ driver.find_element_by_id('assignleave_txtEmployee_empName').send_keys('John Smi
 
 #assign a leave type
 leave_types = driver.find_element_by_id('assignleave_txtLeaveType')
-leave_type_options = 
+leave_type_options = ""
 
 #get start and end date element
 start_date = driver.find_element_by_id('assignleave_txtFromDate')

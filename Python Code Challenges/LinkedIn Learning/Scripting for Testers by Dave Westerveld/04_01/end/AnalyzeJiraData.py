@@ -47,9 +47,9 @@ template_string = Template("""<html>
 formatted_data = ''
 
 for stat in status_counts.keys():
-    formatted_data += "['%s',%s],\n"%(stat,status_counts[stat])
+    formatted_data += "['%s',%s],\n" % (stat, status_counts[stat])
 
 html_string = template_string.substitute(my_data=formatted_data)
 
-with open('PieChart.html','w') as f:
+with open('PieChart.html', 'w') as f:
     f.write(html_string)
